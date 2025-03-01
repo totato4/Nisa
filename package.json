@@ -2,5 +2,8 @@
   "devDependencies": {
     "prettier": "^3.5.0",
     "sass": "^1.84.0"
+  },
+  "scripts": {
+    "sass": "sass src/scss:src/css --watch"
   }
 }

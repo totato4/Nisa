@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/nullstyle.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +18,9 @@
       <header class="header wrapper">
         <div class="container">
           <div class="Logo">
-            <a href=""> <img src="../public/images/Logo.png" alt="" /></a>
+            <a href="">
+              <img class="Logo-img" src="../public/images/Logo.png" alt=""
+            /></a>
           </div>
           <ul class="menu">
             <li class="menu-item">Home</li>
@@ -32,90 +33,91 @@
             <button class="header-btn-login">Login</button>
             <button class="purple-btn">Buy Nesa</button>
           </div>
+          <button class="menu-btn"></button>
         </div>
       </header>
       <main>
         <div class="hero-section_wrapper wrapper">
-          <div class="hero-section_container container">
-            <div class="hero-information">
-              <div class="hero-title">
-                Nisa boosts <br />
-                team product <br />
-                excellence
-              </div>
-              <div class="hero-subtitle">
-                Nisa is constantly improving to move forward through <br />
-                dashboard, statistics, data and verify and superior <br />
-                human resources.
-              </div>
-              <button class="hero-btn">
-                <div>Get Started</div>
+          <div class="container">
+            <div class="hero-section_container">
+              <div class="hero-information">
+                <div class="hero-title">
+                  Nisa boosts team product excellence
+                </div>
+                <div class="hero-subtitle">
+                  Nisa is constantly improving to move forward through
+                  dashboard, statistics, data and verify and superior human
+                  resources.
+                </div>
+                <button class="hero-btn">
+                  <div>Get Started</div>
 
-                <svg
-                  width="24.000000"
-                  height="24.000000"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <desc>Created with Pixso.</desc>
-                  <defs>
-                    <clipPath id="clip728_1948">
-                      <rect
-                        id="arrow-right"
-                        rx="0.000000"
-                        width="23.000000"
-                        height="23.000000"
-                        transform="translate(0.500000 0.500000)"
-                        fill="white"
-                        fill-opacity="0"
+                  <svg
+                    width="24.000000"
+                    height="24.000000"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs>
+                      <clipPath id="clip728_1948">
+                        <rect
+                          id="arrow-right"
+                          rx="0.000000"
+                          width="23.000000"
+                          height="23.000000"
+                          transform="translate(0.500000 0.500000)"
+                          fill="white"
+                          fill-opacity="0"
+                        />
+                      </clipPath>
+                    </defs>
+                    <rect
+                      id="arrow-right"
+                      rx="0.000000"
+                      width="23.000000"
+                      height="23.000000"
+                      transform="translate(0.500000 0.500000)"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip728_1948)">
+                      <path
+                        id="Vector"
+                        d="M5 12L19 12"
+                        stroke="#FFFFFF"
+                        stroke-opacity="1.000000"
+                        stroke-width="2.000000"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
                       />
-                    </clipPath>
-                  </defs>
-                  <rect
-                    id="arrow-right"
-                    rx="0.000000"
-                    width="23.000000"
-                    height="23.000000"
-                    transform="translate(0.500000 0.500000)"
-                    fill="#FFFFFF"
-                    fill-opacity="0"
-                  />
-                  <g clip-path="url(#clip728_1948)">
-                    <path
-                      id="Vector"
-                      d="M5 12L19 12"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="2.000000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      id="Vector"
-                      d="M12 5L19 12L12 19"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="2.000000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                  </g>
-                </svg>
-              </button>
-            </div>
-            <div class="hero-image">
-              <img
-                class="hero-image-bg"
-                src="./public/images/Image.png"
-                alt=""
-              />
-              <img
-                class="hero-image-card"
-                src="./public/images/message-plus.png"
-                alt=""
-              />
+                      <path
+                        id="Vector"
+                        d="M12 5L19 12L12 19"
+                        stroke="#FFFFFF"
+                        stroke-opacity="1.000000"
+                        stroke-width="2.000000"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <div class="hero-image">
+                <img
+                  class="hero-image-bg"
+                  src="./public/images/Image.png"
+                  alt=""
+                />
+                <img
+                  class="hero-image-card"
+                  src="./public/images/message-plus.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>

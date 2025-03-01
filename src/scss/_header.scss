@@ -1,0 +1,119 @@
+@use './globals/globals' as *;
+
+.header {
+  display: none;
+  background-color: #1e1e1e;
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.Logo-img {
+  width: 67px;
+  height: 26px;
+  @media (min-width: $tablet) {
+    width: 72px;
+    height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 99px;
+    height: 38px;
+  }
+}
+
+.menu {
+  display: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 32.5px;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+
+    @include p9r;
+    gap: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    @include p6r;
+    gap: 32px;
+  }
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 8px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  height: 50px; /* Пример высоты */
+}
+
+.menu-item:first-child {
+  color: #ff3c78;
+
+  @include p7b;
+
+  @media (min-width: $desktop) {
+    @include p4b;
+  }
+}
+
+.header-btn-wrapper {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    gap: 24px;
+  }
+  @media (min-width: $desktop) {
+    gap: 32px;
+  }
+}
+
+.header-btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: none;
+  color: #ffffff;
+  @media (min-width: $tablet) {
+    @include p9r;
+  }
+
+  @media (min-width: $desktop) {
+    @include p6r;
+  }
+}
+
+.purple-btn {
+  background: #ff3c78;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 16px;
+
+  @media (min-width: $tablet) {
+    @include p9r;
+  }
+
+  @media (min-width: $desktop) {
+    @include p6r;
+  }
+}
+
+.menu-btn {
+  display: block;
+  height: 12px;
+  width: 46px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: none;
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

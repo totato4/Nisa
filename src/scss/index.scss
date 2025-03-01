@@ -1,0 +1,69 @@
+@use 'globals/globals' as *;
+@use 'nullstyle';
+
+@use 'header';
+@use 'footer';
+
+@use './sections/discover';
+@use './sections/hero';
+@use './sections/review';
+@use './sections/share';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Roboto', serif;
+  letter-spacing: 0%;
+}
+
+.text_green {
+  color: #4fc553;
+  background-color: inherit;
+}
+
+.header {
+  position: relative;
+  height: 94px;
+  width: 100%;
+  color: white;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  color: white;
+  margin: 0px auto;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (min-width: $tablet) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

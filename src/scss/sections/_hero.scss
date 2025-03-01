@@ -1,0 +1,154 @@
+@use '../globals/globals' as *;
+
+@media (min-width: $tablet) {
+}
+
+@media (min-width: $desktop) {
+}
+
+.hero-section_wrapper {
+  background-color: #1e1e1e;
+  margin-bottom: 56px;
+}
+
+.hero-section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet) {
+    gap: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 68px;
+    margin-bottom: 76px;
+  }
+}
+
+.hero-information {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    gap: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 40px;
+  }
+}
+
+.hero-title {
+  max-width: 480px;
+  width: 100%;
+  letter-spacing: -4.2%;
+  margin-bottom: auto;
+
+  @include h6b;
+
+  @media (min-width: $tablet) {
+    @include h4;
+  }
+
+  @media (min-width: $desktop) {
+    @include h3b;
+  }
+}
+
+.hero-subtitle {
+  @include p10r;
+  max-width: 480px;
+
+  @media (min-width: $tablet) {
+    @include p9r;
+  }
+
+  @media (min-width: $desktop) {
+    @include p3r;
+  }
+}
+
+.hero-btn {
+  margin-top: 30px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  width: 178px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+
+  color: white;
+  background-color: #ff3c78;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 14px;
+  line-height: 24px;
+
+  div {
+    text-align: center;
+  }
+}
+
+.hero-image {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 342px;
+  max-height: 338px;
+
+  @media (min-width: $tablet) {
+    max-width: 379px;
+    max-height: 375px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 478px;
+    max-height: 474px;
+  }
+}
+
+.hero-image-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-image-card {
+  height: 108px;
+  width: 99px;
+  position: absolute;
+
+  right: 0;
+
+  bottom: -13px;
+
+  @media (min-width: $tablet) {
+    bottom: -58px;
+    height: 267px;
+    width: 246px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: -35px;
+    height: 267px;
+    width: 246px;
+  }
+}
