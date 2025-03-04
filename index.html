@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nisa</title>
     <link rel="stylesheet" href="./src/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <div class="wrap">
@@ -387,106 +398,223 @@
             <div class="review_slider_container">
               <div class="review_slider">
                 <div class="review_slide">
-                  <div class="review_slide_container">
-                    <div class="review_user_info">
-                      <div class="review_user_avatar">
-                        <img src="./public/images/Profile.png" alt="" />
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="./public/images/Profile.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
                       </div>
-                      <div class="review_user_name-wrap">
-                        <p class="review_user_name">Bob Flores</p>
-                        <p class="review_user_job-name">Graphic Desogner</p>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
                       </div>
-                    </div>
-                    <div class="review_user_comment">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc luctus venenatis mi aliquet cras interdum. Lectus
-                      cons ectetur fermentum lorem aliquam.
-                    </div>
-                    <div class="review_stars">
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="review_slide">
-                  <div class="review_slide_container">
-                    <div class="review_user_info">
-                      <div class="review_user_avatar">
-                        <img src="./public/images/Profile.png" alt="" />
-                      </div>
-                      <div class="review_user_name-wrap">
-                        <p class="review_user_name">Lourens Flores</p>
-                        <p class="review_user_job-name">Graphic Desogner</p>
-                      </div>
-                    </div>
-                    <div class="review_user_comment">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc luctus venenatis mi aliquet cras interdum. Lectus
-                      cons ectetur fermentum lorem aliquam.
-                    </div>
-                    <div class="review_stars">
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
-                      </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="review_slide">
-                  <div class="review_slide_container">
-                    <div class="review_user_info">
-                      <div class="review_user_avatar">
-                        <img src="./public/images/Profile.png" alt="" />
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="./public/images/Profile.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
                       </div>
-                      <div class="review_user_name-wrap">
-                        <p class="review_user_name">Albart Flores</p>
-                        <p class="review_user_job-name">Graphic Desogner</p>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
                       </div>
                     </div>
-                    <div class="review_user_comment">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc luctus venenatis mi aliquet cras interdum. Lectus
-                      cons ectetur fermentum lorem aliquam.
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="./public/images/Profile.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                      </div>
                     </div>
-                    <div class="review_stars">
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="./public/images/Profile.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
                       </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
                       </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
                       </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="./public/images/Profile.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
                       </div>
-                      <div class="review_stars_item">
-                        <img src="./public/images/star.png" alt="" />
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="./public/images/Profile.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="./public/images/star.png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -700,6 +828,40 @@
         </div>
       </footer>
     </div>
-    <script src="./js/slider.js"></script>
+    <!-- <script src="./js/slider.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.review_slider').slick({
+          // Настройки слайдера
+          autoplay: false,
+          dots: false,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          adaptiveHeight: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow: $('.review_btn_prev'), // Привязка кнопки "Назад"
+          nextArrow: $('.review_btn_next'), // Привязка кнопки "Вперед"
+          responsive: [
+            {
+              breakpoint: 833,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>

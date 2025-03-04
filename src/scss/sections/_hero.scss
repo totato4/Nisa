@@ -8,7 +8,6 @@
 
 .hero-section_wrapper {
   background-color: #1e1e1e;
-  margin-bottom: 56px;
 }
 
 .hero-section_container {
@@ -26,11 +25,11 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 68px;
+    margin-bottom: 98px;
   }
   @media (min-width: $desktop) {
-    margin-top: 68px;
+    margin-top: 80px;
     margin-bottom: 76px;
   }
 }

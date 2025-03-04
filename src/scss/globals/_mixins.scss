@@ -10,6 +10,12 @@
   line-height: 64px;
 }
 
+@mixin h5b {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+
 @mixin h6b {
   font-weight: 700;
   font-size: 32px;
