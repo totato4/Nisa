@@ -50,7 +50,9 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 372px;
+  @media (min-width: $tablet) {
+    max-width: 372px;
+  }
 }
 
 .footer__build__title {
@@ -133,27 +135,11 @@
 .footer-bottom {
   width: 100%;
   height: 70px;
-  display: none;
-  justify-content: center;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    padding: 0px 40px;
-  }
-  @media (min-width: $tablet) {
-    padding: 0px 16px;
-  }
-}
-
-.footer-bottom_mobile {
-  width: 100%;
-  height: 70px;
   display: flex;
   justify-content: center;
 
   @media (min-width: $tablet) {
     padding: 0px 40px;
-    display: none;
   }
   @media (min-width: $tablet) {
     padding: 0px 16px;
@@ -164,34 +150,24 @@
   max-width: 1040px;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-
-  @include p10r;
-
-  @media (min-width: $desktop) {
-    @include p9r;
-  }
-}
-
-.footer-bottom__container_mobile {
-  max-width: 1040px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Два столбца */
+  grid-template-rows: auto auto; /* Две строки */
 
   @include p10r;
 
   div {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   @media (min-width: $desktop) {
@@ -200,16 +176,16 @@
 }
 
 .footer-bottom__template {
-  display: flex;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  align-items: center;
-  margin: auto;
+  grid-column: 1 / -1; /* Первый элемент занимает все столбцы */
 
   img {
     margin-right: 6px;
   }
   @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
     margin: 0px;
   }
 }
