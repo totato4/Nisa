@@ -7,7 +7,6 @@
   color: white;
 
   width: 100%;
-  height: 587px;
   display: flex;
   flex-direction: column;
 }
@@ -15,10 +14,16 @@
 .footer__top {
   width: 100%;
   height: 100%;
-  max-height: 518px;
   border-bottom: 1px solid #696969;
   display: flex;
   justify-content: center;
+  padding: 0px 16px;
+  @media (min-width: $tablet) {
+    padding: 0px 48px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0px 200px;
+  }
 }
 
 .footer__top_container {
@@ -28,28 +33,45 @@
 
   display: flex;
   justify-content: flex-start;
-  gap: 100px;
+  flex-direction: column;
+  gap: 33px;
   margin-top: 80px;
   margin-bottom: 47px;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 68px;
+  }
+  @media (min-width: $desktop) {
+    gap: 100px;
+  }
 }
 
 .footer__top__build {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+
   max-width: 372px;
 }
 
 .footer__build__title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
+  @include h8b;
+  margin-bottom: 16px;
+  @media (min-width: $tablet) {
+    @include h6b;
+  }
+  @media (min-width: $desktop) {
+    @include h5b;
+    margin-bottom: 24px;
+  }
 }
 
 .footer_build__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  @include p9r;
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop) {
+    @include p6r;
+  }
 }
 
 .footer__social {
@@ -65,6 +87,17 @@
   height: 20px;
 }
 
+.footer__list__wrapper {
+  display: flex;
+  gap: 40px;
+  @media (min-width: $tablet) {
+    gap: 48px;
+  }
+  @media (min-width: $desktop) {
+    gap: 100px;
+  }
+}
+
 .footer__list-wrap {
   display: flex;
   flex-direction: column;
@@ -72,9 +105,13 @@
 }
 
 .footer__list-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
+  @include p7b;
+  @media (min-width: $tablet) {
+    @include p4b;
+  }
+  @media (min-width: $desktop) {
+    @include p1b;
+  }
 }
 
 .footer__list {
@@ -84,29 +121,82 @@
 }
 
 .footer__list_item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  @include p10r;
+  @media (min-width: $tablet) {
+    @include p9r;
+  }
+  @media (min-width: $desktop) {
+    @include p6r;
+  }
 }
 
 .footer-bottom {
   width: 100%;
   height: 70px;
-  display: flex;
+  display: none;
   justify-content: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 0px 40px;
+  }
+  @media (min-width: $tablet) {
+    padding: 0px 16px;
+  }
 }
 
-.footer-bottom_container {
+.footer-bottom_mobile {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    padding: 0px 40px;
+    display: none;
+  }
+  @media (min-width: $tablet) {
+    padding: 0px 16px;
+  }
+}
+
+.footer-bottom__container {
   max-width: 1040px;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  @include p10r;
+
+  @media (min-width: $desktop) {
+    @include p9r;
+  }
+}
+
+.footer-bottom__container_mobile {
+  max-width: 1040px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  @include p10r;
+
+  div {
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    @include p9r;
+  }
 }
 
 .footer-bottom__template {
@@ -114,9 +204,13 @@
   flex-wrap: nowrap;
   white-space: nowrap;
   align-items: center;
+  margin: auto;
 
   img {
     margin-right: 6px;
+  }
+  @media (min-width: $tablet) {
+    margin: 0px;
   }
 }
 
