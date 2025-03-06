@@ -91,13 +91,28 @@ h6 {
 
 /*--------------------*/
 .header {
-  display: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: white;
+  height: 42px;
   background-color: #1e1e1e;
 }
 @media (min-width: 834px) {
   .header {
     display: block;
+    height: 64px;
   }
+}
+@media (min-width: 1440px) {
+  .header {
+    display: block;
+    height: 94px;
+  }
+}
+
+.header_container {
+  position: relative;
 }
 
 .Logo-img {
@@ -206,7 +221,6 @@ h6 {
 .purple-btn {
   background: #ff3c78;
   color: #ffffff;
-  padding: 12px 24px;
   border-radius: 16px;
 }
 @media (min-width: 834px) {
@@ -214,6 +228,7 @@ h6 {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    padding: 8px 20px;
   }
 }
 @media (min-width: 1440px) {
@@ -221,6 +236,7 @@ h6 {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    padding: 12px 24px;
   }
 }
 
@@ -232,11 +248,62 @@ h6 {
   border-bottom: 1px solid white;
   background: none;
   margin-left: auto;
+  outline: none; /* Убирает стандартную обводку при фокусе */
+  -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных устройствах */
 }
 @media (min-width: 834px) {
   .menu-btn {
     display: none;
   }
+}
+
+.header__mobile_container {
+  display: block;
+  position: fixed;
+  z-index: 4;
+  background-color: #1e1e1e;
+  border: 1px solid red;
+  height: 42px;
+}
+@media (min-width: 834px) {
+  .header__mobile_container {
+    display: none !important;
+  }
+}
+
+.menuToggle {
+  position: fixed;
+  z-index: 3;
+  top: 42px;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  width: 100vw;
+  background-color: #1e1e1e;
+  height: 100vh;
+  transition: transform 0.2s ease-in-out;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  gap: 70px;
+}
+@media (min-width: 834px) {
+  .menuToggle {
+    display: none;
+  }
+}
+
+.menuToggle_active {
+  transform: translateY(0);
+}
+
+.no-scroll {
+  overflow: hidden; /* Запрет прокрутки */
 }
 
 .footer__wrapper {
@@ -1377,13 +1444,6 @@ h6 {
 .text_green {
   color: #4fc553;
   background-color: inherit;
-}
-
-.header {
-  position: relative;
-  height: 94px;
-  width: 100%;
-  color: white;
 }
 
 header,

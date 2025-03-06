@@ -1,11 +1,24 @@
 @use './globals/globals' as *;
 
 .header {
-  display: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: white;
+  height: 42px;
   background-color: #1e1e1e;
   @media (min-width: $tablet) {
     display: block;
+    height: 64px;
   }
+  @media (min-width: $desktop) {
+    display: block;
+    height: 94px;
+  }
+}
+
+.header_container {
+  position: relative;
 }
 
 .Logo-img {
@@ -92,15 +105,17 @@
 .purple-btn {
   background: #ff3c78;
   color: #ffffff;
-  padding: 12px 24px;
+
   border-radius: 16px;
 
   @media (min-width: $tablet) {
     @include p9r;
+    padding: 8px 20px;
   }
 
   @media (min-width: $desktop) {
     @include p6r;
+    padding: 12px 24px;
   }
 }
 
@@ -113,7 +128,55 @@
   background: none;
   margin-left: auto;
 
+  outline: none; /* Убирает стандартную обводку при фокусе */
+  -webkit-tap-highlight-color: transparent; /* Убирает подсветку на мобильных устройствах */
+
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.header__mobile_container {
+  display: block;
+  position: fixed;
+  z-index: 4;
+  background-color: #1e1e1e;
+  border: 1px solid red;
+  height: 42px;
+  @media (min-width: $tablet) {
+    display: none !important;
+  }
+}
+
+.menuToggle {
+  position: fixed;
+  z-index: 3;
+  top: 42px;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+
+  width: 100vw;
+  background-color: #1e1e1e;
+  height: 100vh;
+  transition: transform 0.2s ease-in-out;
+
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include h5b;
+  gap: 70px;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menuToggle_active {
+  transform: translateY(0);
+}
+
+.no-scroll {
+  overflow: hidden; /* Запрет прокрутки */
 }
