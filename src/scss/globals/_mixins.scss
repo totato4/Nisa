@@ -81,3 +81,14 @@
   font-size: 12px;
   line-height: 18px;
 }
+@mixin p11b {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+@mixin p16r {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 14px;
+}
