@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'src', // Корневая папка проекта
-  base: '/Nisa/',
+  base: '/nisa/',
   build: {
     outDir: '../dist', // Папка для собранного проекта
     emptyOutDir: true, // Очищать папку перед сборкой
