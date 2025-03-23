@@ -83,6 +83,9 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  @media (min-max: $tablet) and (max-width: $desktop) {
+    width: 189px !important;
+  }
 }
 
 .review_slide_wrapper {

@@ -1,9 +1,15 @@
 {
+  "type": "module",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
     "prettier": "^3.5.0",
-    "sass": "^1.84.0"
+    "sass": "^1.84.0",
+    "vite": "^6.2.2"
   },
   "scripts": {
-    "sass": "sass src/scss:src/css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
