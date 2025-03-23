@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nisa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" crossorigin href="/Nisa/assets/main.tmk2UX-4.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- HEADER -->
+      <header class="header wrapper">
+        <div class="header_container container">
+          <div class="Logo">
+            <a href="">
+              <img class="Logo-img" src="data:image/png;base64,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" alt=""
+            /></a>
+          </div>
+          <ul class="menu">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">Pricing</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Blog</li>
+            <li class="menu-item">Contact</li>
+          </ul>
+          <div class="header-btn-wrapper">
+            <button class="header-btn-login">Login</button>
+            <button class="purple-btn">Buy Nesa</button>
+          </div>
+        </div>
+        <div class="header__mobile_container container">
+          <a href="">
+            <img class="Logo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAAmCAYAAADQriVKAAAABHNCSVQICAgIfAhkiAAABkdJREFUaIHtmnuIVFUcxz+/cV9amps9KIJkyyhLk8KCHMmorKys8EEaRhRoIa1i2Y4ZWARqplGivajosWVPsYeKKZhlWGFPMoUo0EJFyVJMV3fdb3+cc/Punddtd3ZnjPnCMPeex+/+5n7POd/f78yBMsooo4wyyijjmIMV24GuhCQDKgCZWUux/Ymi5MjwL6x3qOgvM1OMft2AXv72oJk1ReprgFHASOAPYLGZbSqM14WBKZmaBTycp90Vtn7uJ/mM5bJl6+fmJd4T0QK0hooPAwPM7Ncc/QYB3/q+4Eb/88DdAZGS6oEFvg5gL3CNmX2Zz6+uQsLWz32E/GSsVTI1rPPdoTfQjHthwacH8FSMvi2hPmF7AQZH6roBl3fE2UIjAVBihGTCDZKu7aCNPZF7AzZ30GZBkQgujgFCFkqq7ED/x4B3gb+A34BZwOpCOFYoJMI3JU5IPyDV3s5mth0YC5wGnG1mC6IiX2wkogUlTshMSXUd6F8BdAeqJVXkaigpIalG0vGSaiX1lFTlg4xYkFQhqYekXpJO8NdZn5tGBpQ0IdXEE/M0SHoCF5ntAvYBuyRdmaXtcOBt4GdgN7AD+B0Xsc2XdG4uUjxx44H3vY3twE5gG7BOUr2kPtF+GcmAkibkBkk3t6Pfbv8djMxa4MRwAz+ClwKrcDnJGUANbhD0AvoD03CkNGR6iKRLgI3A68AI4HTgOG+nD3AZbkBtkDQw3DcrGVAyhGzEjcww5vkkrtB4DbglQ3lr5L4GmCPp/vAMkTQYWAmcE+NZ/YCPJQ0ICnKSASVDyH2R+37A9EI+wC9NIyPFXwB3AqOB+bgcKIwGnAYFmEPb2SZgLfAgMI/0QXWqtw/EIAPiEwIMi2OvHXgbWB8pmymp7r8Iah5cRdsZsB+4BngZWGlm04HZvu6Ib3sSbtkJtlvO8vUtOCJW4YhcAMwErsaF1WFcGlzEIgNiEzIsrr3/iFbgXo5ud4AX8zj7VvkgKYHL9MOoBupwmfohX7YYuBH3gkcB44CfAHyYfBZOH07x3yPMbI+ZHTazFr8X9lXkOVVB/pQAUHLGhDhOxySkM3CcmX2HexlhtFfM28DMWoFPaTs4K4ENwFJgkl/b/waWAx+a2TIze9PnL//aMbMDZvYnjsCqUGjbU9LJpE+Abjjigwq9qiGp22I5XhxCgsz7IdLX3Sdxgpozb4iBd4CPImU1uJnwDPADLrx9E0hmWx59ftIft6R9BmzFhbV7cGF1pgABCLNkNCqZGhfH62LNEDPbT7qYn4kLNztqW8BtwEu49T4TanFZ/CdAYzSBk1QLLAS+xon7YJyudCfGYIlOmTc05MGxsZwvHiFLgDWR4jEFsr3PzO4CLsJtwUfFNozxwAteb5DUE7f/NRk3owK04hK/z73fe7MZTBdwa31LQx8YHcv54mlIPW3FvMOQZH7LojuwCZiCE+S+wARgBekz5nbgPH89CCfsYXwKnA8MBIbjCFyRzYfM0ZQS7yiZyrq2hVEMQsxsM/B4oexJqgYexY3sJ4FFwLlm1mxmW82s0cyuB+6JuoLLecC98NpI/dNmtsXMmryw7ybHIMoV2i7V0Iab4vyYIs2Q2ThxLBQmApP890Rgihfj8DvaTHY9iYbG4KKpCr/hWCHpAmBoNgdy5xmyZUo23JizjUdXE+LFfGqBbB0ClkSK78BFV2MkXSFpEvAKbc8NNAHf+OstwIGIjReB93DZ+3KcsPeNtKkALoZYSZ99oCEzRuRvVxRClpEu5u3FHODHSNl1uFB2DfAs6S/yWVy4C24PLfrPYSVui2UyTjOqMjy3h28XkGGrc36MqUqmYv3tWYQlq56jGXK7YWY7gZuBdRmqo4P2CE6zpvmEETPbAdyKz8iz4BDwS6SsDreb23lQMjVLyZSCT6w+LqI5IqnZfyTps3z7T5Jm+7bhfs9FdlSfCLWRpD25/s+Q1Chpm6T9kpok7ZW0SdICSRfmSPpqJU2X9L2kfZIOStoh6S1Jl0saJWm7pFb/W1skLYJOPjcVProT56gOpJ2bagb+jnluqhI43t+mnZuKtGnxbbJGNl64q3BreqXvcwhozuePjh6Wq8ZtdxwmffYGy9MBr1mdj2CGdMnDysgPP0PKKKOMMsooo4wy/n/4B3ifAc151GsvAAAAAElFTkSuQmCC" alt=""
+          /></a>
+          <button class="menu-btn"></button>
+        </div>
+
+        <ul class="menuToggle">
+          <li class="menu-item-mobile">Home</li>
+          <li class="menu-item-mobile">Pricing</li>
+          <li class="menu-item-mobile">About</li>
+          <li class="menu-item-mobile">Blog</li>
+          <li class="menu-item-mobile">Contact</li>
+        </ul>
+      </header>
+      <main>
+        <div class="hero-section_wrapper wrapper">
+          <div class="container">
+            <div class="hero-section_container">
+              <div class="hero-information">
+                <div class="hero-title">
+                  Nisa boosts team product excellence
+                </div>
+                <div class="hero-subtitle">
+                  Nisa is constantly improving to move forward through
+                  dashboard, statistics, data and verify and superior human
+                  resources.
+                </div>
+                <button class="hero-btn">
+                  <div>Get Started</div>
+
+                  <svg
+                    width="24.000000"
+                    height="24.000000"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs>
+                      <clipPath id="clip728_1948">
+                        <rect
+                          id="arrow-right"
+                          rx="0.000000"
+                          width="23.000000"
+                          height="23.000000"
+                          transform="translate(0.500000 0.500000)"
+                          fill="white"
+                          fill-opacity="0"
+                        />
+                      </clipPath>
+                    </defs>
+                    <rect
+                      id="arrow-right"
+                      rx="0.000000"
+                      width="23.000000"
+                      height="23.000000"
+                      transform="translate(0.500000 0.500000)"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip728_1948)">
+                      <path
+                        id="Vector"
+                        d="M5 12L19 12"
+                        stroke="#FFFFFF"
+                        stroke-opacity="1.000000"
+                        stroke-width="2.000000"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        id="Vector"
+                        d="M12 5L19 12L12 19"
+                        stroke="#FFFFFF"
+                        stroke-opacity="1.000000"
+                        stroke-width="2.000000"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <div class="hero-image">
+                <img class="hero-image-bg" src="/Nisa/assets/Image.BlJMZ7R5.png" alt="" />
+                <img
+                  class="hero-image-card"
+                  src="/Nisa/assets/message-plus.CwVR3v__.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discover-section_wrapper wrapper">
+          <div class="discover-section_container">
+            <div class="discover-img">
+              <div class="discover_img_paint_first">
+                <img src="data:image/png;base64,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" alt="" />
+              </div>
+              <img
+                class="discover_img_main"
+                src="/Nisa/assets/discover-main.BGS3mXvN.png"
+                alt=""
+              />
+              <div class="discover_img_paint_second">
+                <img src="data:image/png;base64,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" alt="" />
+              </div>
+            </div>
+            <div class="discover-info">
+              <div class="discover-title">
+                Discover the power of <br />
+                creative freedom with Nisa.
+              </div>
+              <div class="discover-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                <br />
+                tincidunt finibus tortor. Donec lobortis augue sed ante
+                molestie, vitae <br />
+                maximus nunc semper.
+              </div>
+              <button class="discover-btn">Explore Section</button>
+              <div class="discover-text">
+                Add some additional details about your product
+              </div>
+              <div class="discover-profile">
+                <div class="discover-profile-img">
+                  <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                </div>
+                <div class="discover-profile-info">
+                  <div class="discover-profile-title">Motiur Leeman</div>
+                  <div class="discover-profile-subtitle">Markating Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="share-section_wrapper wrapper">
+          <div class="share-section_container">
+            <div class="share-content">
+              <h2 class="share-content_title">
+                Share the features that <br />
+                help your customers
+              </h2>
+              <p class="share-content_subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Pretium consectetur egestas mauris adipiscing dui. <br />
+                Cursus facilisis diam turpis leo netus consequat <br />
+                phasellus. Netus ipsum sed faucibus enim.
+              </p>
+              <button class="share-content_btn">Explore Section</button>
+            </div>
+            <div class="share-card_wrapper">
+              <div class="share-card_container">
+                <div class="share-card_item">
+                  <div class="share-card_item_icon">
+                    <svg
+                      width="27.000000"
+                      height="27.000000"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs>
+                        <clipPath id="clip452_2476">
+                          <rect
+                            id="twitch"
+                            rx="0.000000"
+                            width="26.000000"
+                            height="26.000000"
+                            transform="translate(0.500000 0.500000)"
+                            fill="white"
+                            fill-opacity="0"
+                          />
+                        </clipPath>
+                      </defs>
+                      <g clip-path="url(#clip452_2476)">
+                        <path
+                          id="Vector"
+                          d="M3.37 2.25L3.37 20.25L9 20.25L9 24.75L13.5 20.25L19.12 20.25L23.62 15.75L23.62 2.25L3.37 2.25ZM12.37 7.87L12.37 12.37L12.37 7.87ZM18 12.37L18 7.87"
+                          stroke="#FF3C78"
+                          stroke-opacity="1.000000"
+                          stroke-width="2.000000"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="share-card_item_title">Blog</div>
+                  <div class="share-card_item_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+                <div class="share-card_item">
+                  <div class="share-card_item_icon">
+                    <svg
+                      width="31.000000"
+                      height="31.000000"
+                      viewBox="0 0 31 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g clip-path="url(#clip452_2493)">
+                        <path
+                          id="Vector"
+                          d="M2.58 9.04L15.5 15.5L28.41 9.04L15.5 2.58L2.58 9.04Z"
+                          stroke="#FF3C78"
+                          stroke-opacity="1.000000"
+                          stroke-width="2.000000"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          id="Vector"
+                          d="M2.58 21.95L15.5 28.41L28.41 21.95"
+                          stroke="#FF3C78"
+                          stroke-opacity="1.000000"
+                          stroke-width="2.000000"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          id="Vector"
+                          d="M2.58 15.5L15.5 21.95L28.41 15.5"
+                          stroke="#FF3C78"
+                          stroke-opacity="1.000000"
+                          stroke-width="2.000000"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div class="share-card_item_title">Documentation</div>
+                  <div class="share-card_item_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+                <div class="share-card_item">
+                  <div class="share-card_item_icon">
+                    <svg
+                      width="26.000244"
+                      height="32.500977"
+                      viewBox="0 0 26.0002 32.501"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        id="Rectangle 332"
+                        y="4.333984"
+                        width="26.000000"
+                        height="22.750000"
+                        fill="#FF3C78"
+                        fill-opacity="1.000000"
+                      />
+                      <rect
+                        id="Rectangle 333"
+                        width="26.000000"
+                        height="2.166667"
+                        fill="#FF3C78"
+                        fill-opacity="1.000000"
+                      />
+                      <rect
+                        id="Rectangle 334"
+                        x="11.916992"
+                        y="8.666016"
+                        width="14.083334"
+                        height="4.333333"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                      />
+                      <rect
+                        id="Rectangle 335"
+                        x="11.916992"
+                        y="15.166016"
+                        width="14.083334"
+                        height="2.166667"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                      />
+                      <rect
+                        id="Rectangle 336"
+                        x="14.083008"
+                        y="27.083984"
+                        width="5.416667"
+                        height="2.166666"
+                        transform="rotate(90 14.083008 27.083984)"
+                        fill="#FF3C78"
+                        fill-opacity="1.000000"
+                      />
+                      <path
+                        id="Ellipse 1518"
+                        d="M9.75 13.54C9.75 14.43 9.44 15.25 8.92 15.9C8.36 16.6 7.61 17.05 6.8 17.23C5.93 17.43 5.06 17.31 4.31 16.95C3.5 16.57 2.9 15.93 2.54 15.18C2.15 14.38 2.07 13.5 2.26 12.69C2.46 11.82 2.94 11.09 3.59 10.57C4.29 10.02 5.12 9.75 5.95 9.75L5.95 12.22C5.64 12.22 5.36 12.33 5.13 12.51C4.89 12.7 4.73 12.96 4.67 13.24C4.6 13.55 4.64 13.85 4.77 14.11C4.9 14.39 5.12 14.6 5.38 14.72C5.66 14.86 5.97 14.89 6.25 14.82C6.55 14.75 6.8 14.58 6.98 14.36C7.18 14.12 7.27 13.83 7.27 13.54L9.75 13.54Z"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div class="share-card_item_title">intergrations</div>
+                  <div class="share-card_item_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+                <div class="share-card_item">
+                  <div class="share-card_item_icon">
+                    <svg
+                      width="31.000000"
+                      height="31.000000"
+                      viewBox="0 0 31 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g clip-path="url(#clip452_2484)">
+                        <path
+                          id="Vector"
+                          d="M24.54 21.83C26.11 21.51 27.5 20.62 28.45 19.33C29.4 18.04 29.84 16.44 29.68 14.85C29.52 13.25 28.77 11.78 27.58 10.7C26.39 9.63 24.85 9.04 23.25 9.04L21.62 9.04C21.19 7.38 20.36 5.86 19.19 4.6C18.03 3.34 16.58 2.4 14.96 1.84C13.34 1.29 11.61 1.15 9.92 1.43C8.23 1.71 6.64 2.4 5.29 3.45C3.93 4.5 2.86 5.87 2.17 7.43C1.47 9 1.18 10.71 1.31 12.41C1.44 14.12 1.99 15.77 2.92 17.21C3.84 18.65 5.11 19.83 6.61 20.66"
+                          stroke="#FF3C78"
+                          stroke-opacity="1.000000"
+                          stroke-width="2.000000"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          id="Vector"
+                          d="M16.79 14.2L11.62 21.95L19.37 21.95L14.2 29.7"
+                          stroke="#FF3C78"
+                          stroke-opacity="1.000000"
+                          stroke-width="2.000000"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="share-card_item_title">Customers</div>
+                  <div class="share-card_item_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review-section_wrapper wrapper">
+          <img
+            class="review-bg"
+            src="/Nisa/assets/rewiev-bg.DvMlEdTE.jpeg"
+            alt="background picture"
+          />
+          <div class="review-section_container">
+            <div class="review-section__title">
+              Customers love the ease <br />
+              and simplicity
+            </div>
+            <div class="review_slider_container">
+              <div class="review_slider">
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_slide">
+                  <div class="review_slide_wrapper">
+                    <div class="review_slide_container">
+                      <div class="review_user_info">
+                        <div class="review_user_avatar">
+                          <img src="/Nisa/assets/Profile.Be6c4ELT.png" alt="" />
+                        </div>
+                        <div class="review_user_name-wrap">
+                          <p class="review_user_name">Bob Flores</p>
+                          <p class="review_user_job-name">Graphic Desogner</p>
+                        </div>
+                      </div>
+                      <div class="review_user_comment">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc luctus venenatis mi aliquet cras interdum. Lectus
+                        cons ectetur fermentum lorem aliquam.
+                      </div>
+                      <div class="review_stars">
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                        <div class="review_stars_item">
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABHNCSVQICAgIfAhkiAAAASdJREFUSIm1lkF2gyAQhv/RC9QTFRPWzeuJ1BPx2nWS2hPRC5TpIoWiBQQSZ6U8hk8+Z1CgMLSSQispSvOa0gRqeUBjnncHAQCBxl1BWkkBhnDXe4Go5eEvs0xflTqgXF82yNe2GHs0aKHNZefrq1YHlOkjraQIPu06Vto82ryZ+k0TATfX1PIQXeyOYEN993qeyR/Ub4ehphmDAPDYna6Tvaf1BK2koIY/HgkJghysQmUIkAQ5YIHKFATYKm/TfOZAcuYmQVll71ZKN+9dDevHluIoKHS2Abd3EWvS1NkXBYW02Rf+9HLpGTz+Xy2uL08dYWZDvV9V3ek6saHe311KX7yPfpt2q2yBZRvYI2c9J7gjqy0HAni7A8q+vDW/Uza+3o/B4+sH5cGL3NhGj6cAAAAASUVORK5CYII=" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review_slider_control">
+                <button class="review_btn review_btn_prev">
+                  <svg
+                    width="8.003906"
+                    height="14.007812"
+                    viewBox="0 0 8.00391 14.0078"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      id="Vector"
+                      d="M7 13L1 7L7 1"
+                      stroke="#FFFFFF"
+                      stroke-opacity="1.000000"
+                      stroke-width="2.000000"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <button class="review_btn review_btn_next">
+                  <svg
+                    width="8.003906"
+                    height="14.007812"
+                    viewBox="0 0 8.00391 14.0078"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      id="Vector"
+                      d="M1 1L7 7L1 13"
+                      stroke="#FFFFFF"
+                      stroke-opacity="1.000000"
+                      stroke-width="2.000000"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer__wrapper wrapper">
+          <div class="footer__top">
+            <div class="footer__top_container">
+              <div class="footer__top__build">
+                <h1 class="footer__build__title">
+                  Build a beautiful product with align
+                </h1>
+                <div class="footer_build__subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus euismod fusce pulvinar amet. Sollicitudin nullam mauris
+                  tellus accumsan, phasellus. Ut ac consequat arcu non aliquam.
+                </div>
+                <div class="footer__social">
+                  <div class="footer__social__item">
+                    <svg
+                      width="18.581787"
+                      height="14.613281"
+                      viewBox="0 0 18.5818 14.6133"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        id="Vector"
+                        d="M18.58 1.73C17.89 2.02 17.16 2.22 16.39 2.31C17.18 1.85 17.78 1.12 18.06 0.27C17.32 0.7 16.5 1 15.64 1.16C15.07 0.57 14.31 0.18 13.48 0.04C12.65 -0.09 11.8 0.05 11.06 0.43C10.32 0.82 9.73 1.42 9.38 2.16C9.04 2.91 8.95 3.74 9.15 4.53C7.63 4.45 6.15 4.07 4.79 3.41C3.44 2.75 2.25 1.81 1.29 0.67C0.96 1.22 0.77 1.85 0.77 2.53C0.77 3.13 0.93 3.73 1.22 4.27C1.52 4.8 1.95 5.26 2.47 5.6C1.86 5.58 1.27 5.42 0.74 5.14L0.74 5.18C0.74 6.03 1.05 6.86 1.6 7.52C2.16 8.18 2.94 8.63 3.8 8.8C3.24 8.95 2.65 8.97 2.08 8.86C2.32 9.6 2.8 10.24 3.43 10.7C4.07 11.16 4.84 11.41 5.64 11.42C4.29 12.45 2.62 13 0.9 13C0.6 13 0.3 12.99 0 12.95C1.74 14.03 3.77 14.61 5.84 14.61C12.85 14.61 16.69 8.99 16.69 4.12C16.69 3.96 16.68 3.8 16.67 3.64C17.42 3.12 18.06 2.47 18.58 1.73L18.58 1.73Z"
+                        fill="#10ADED"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="footer_social__item">
+                    <svg
+                      width="7.640381"
+                      height="14.248047"
+                      viewBox="0 0 7.64038 14.248"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        id="Vector"
+                        d="M4.96 14.24L4.96 7.75L7.22 7.75L7.56 5.21L4.96 5.21L4.96 3.6C4.96 2.86 5.17 2.36 6.26 2.36L7.64 2.36L7.64 0.1C6.96 0.03 6.29 -0.01 5.62 0C3.62 0 2.24 1.18 2.24 3.34L2.24 5.21L0 5.21L0 7.75L2.25 7.75L2.25 14.24L4.96 14.24Z"
+                        fill="#3F7BF8"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </svg>
+                  </div>
+                  <div class="footer__social__item">
+                    <svg
+                      width="18.855225"
+                      height="13.062500"
+                      viewBox="0 0 18.8552 13.0625"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        id="Vector"
+                        d="M11.45 5.59C11.51 5.92 11.55 6.25 11.55 6.68C11.55 10.41 9.29 13.06 5.89 13.06C2.63 13.06 0 10.14 0 6.53C0 2.92 2.63 0 5.89 0C7.48 0 8.81 0.64 9.83 1.71L8.23 3.41C7.8 2.94 7.04 2.4 5.89 2.4C3.88 2.4 2.24 4.25 2.24 6.53C2.24 8.81 3.88 10.65 5.89 10.65C8.22 10.65 9.09 8.79 9.23 7.84L5.89 7.84L5.89 5.59L11.45 5.59L11.45 5.59ZM17.14 5.81L17.14 3.91L15.42 3.91L15.42 5.81L13.71 5.81L13.71 7.71L15.42 7.71L15.42 9.61L17.14 9.61L17.14 7.71L18.85 7.71L18.85 5.81L17.14 5.81Z"
+                        fill="#F04D3F"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </svg>
+                  </div>
+                  <div class="footer__social__item">
+                    <svg
+                      width="12.766602"
+                      height="15.199219"
+                      viewBox="0 0 12.7666 15.1992"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        id="Vector"
+                        d="M6.57 0C2.25 0 0 2.66 0 5.6C0 7.02 0.78 8.45 2.06 9.21C2.45 9.4 2.35 9.21 2.65 8.07C2.65 7.98 2.65 7.88 2.55 7.78C0.78 5.69 2.25 1.61 6.38 1.61C12.37 1.61 11.19 9.59 7.46 9.59C6.67 9.68 5.99 9.11 5.99 8.35L5.99 7.98C6.38 6.93 6.67 5.98 6.77 4.93C6.77 2.94 3.73 3.23 3.73 5.89C3.73 6.36 3.83 6.83 4.02 7.22C4.02 7.22 3.04 11.11 2.84 11.77C2.65 12.91 2.74 14.06 2.94 15.1C2.84 15.19 2.94 15.19 2.94 15.19L3.04 15.19C3.73 14.25 4.32 13.3 4.71 12.25C4.81 11.77 5.3 10.07 5.3 10.07C5.79 10.73 6.67 11.11 7.56 11.11C10.6 11.11 12.76 8.55 12.76 5.41C12.76 2.27 10.01 0 6.57 0Z"
+                        fill="#CB2056"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </svg>
+                  </div>
+                  <div class="footer__social__item">
+                    <svg
+                      width="16.367432"
+                      height="15.833984"
+                      viewBox="0 0 16.3674 15.834"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        id="Vector"
+                        d="M6.07 5.51L9.11 5.51L9.11 6.98C9.55 6.13 10.67 5.38 12.36 5.38C15.59 5.38 16.36 7.05 16.36 10.13L16.36 15.83L13.09 15.83L13.09 10.83C13.09 9.08 12.65 8.09 11.54 8.09C9.99 8.09 9.35 9.16 9.35 10.83L9.35 15.83L6.07 15.83L6.07 5.51ZM0.46 15.69L3.73 15.69L3.73 5.38L0.46 5.38L0.46 15.69ZM4.2 2.01C4.2 2.28 4.15 2.54 4.04 2.79C3.94 3.03 3.78 3.25 3.59 3.44C3.19 3.82 2.66 4.03 2.1 4.03C1.54 4.03 1.01 3.82 0.61 3.44C0.42 3.25 0.26 3.03 0.16 2.79C0.05 2.54 0 2.28 0 2.01C0 1.48 0.22 0.97 0.61 0.59C1.01 0.21 1.54 0 2.1 0C2.66 0 3.19 0.21 3.59 0.59C3.98 0.97 4.2 1.48 4.2 2.01Z"
+                        fill="#007BB6"
+                        fill-opacity="1.000000"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__list__wrapper">
+                <div class="footer__list-wrap">
+                  <h3 class="footer__list-title">Overview</h3>
+                  <ul class="footer__list">
+                    <li class="footer__list_item">Home</li>
+                    <li class="footer__list_item">About</li>
+                    <li class="footer__list_item">Blog</li>
+                    <li class="footer__list_item">Blog post</li>
+                    <li class="footer__list_item">Team Mamber</li>
+                  </ul>
+                </div>
+                <div class="footer__list-wrap">
+                  <h3 class="footer__list-title">Pages</h3>
+                  <ul class="footer__list">
+                    <li class="footer__list_item">Contact</li>
+                    <li class="footer__list_item">Customer Story</li>
+                    <li class="footer__list_item">Login</li>
+                    <li class="footer__list_item">Register</li>
+                    <li class="footer__list_item">Style Guide</li>
+                    <li class="footer__list_item">Changelog</li>
+                    <li class="footer__list_item">Licence</li>
+                    <li class="footer__list_item">404</li>
+                    <li class="footer__list_item">Password</li>
+                  </ul>
+                </div>
+                <div class="footer__list-wrap">
+                  <h3 class="footer__list-title">Connect:</h3>
+                  <ul class="footer__list">
+                    <li class="footer__list_item">+001 234 567 89</li>
+                    <li class="footer__list_item">hellow@nesa.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__container">
+              <div class="footer-bottom__template">
+                <img src="data:image/png;base64,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" alt="" />
+                @ template by &nbsp;
+                <mark class="text_green"> Flowbass</mark>- Powered by &nbsp;
+                <mark class="text_green"> ui8</mark>
+              </div>
+              <div class="footer-bottom__policy">
+                <p>Term of services privacy policy</p>
+              </div>
+              <div class="footer-bottom__overview">
+                <p>Overview</p>
+                <p>Pages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./scripts/menu.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.review_slider').slick({
+          // Настройки слайдера
+          autoplay: false,
+          dots: false,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          adaptiveHeight: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow: $('.review_btn_prev'), // Привязка кнопки "Назад"
+          nextArrow: $('.review_btn_next'), // Привязка кнопки "Вперед"
+          responsive: [
+            {
+              breakpoint: 833,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
